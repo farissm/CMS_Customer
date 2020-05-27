@@ -6,9 +6,11 @@
       dark
     >
       <v-btn
-        right
         class="red black--text"
-      >click me</v-btn>
+      >Logout</v-btn>
+      <v-btn
+        class="blue black--text"
+      >Login</v-btn>
     </v-app-bar>
 
     <v-content>
@@ -21,9 +23,6 @@
 // import HelloWorld from './components/HelloWorld'
 
 export default {
-  name: 'App',
-  data: () => ({
-    //
-  })
+  name: 'App'
 }
 </script>
