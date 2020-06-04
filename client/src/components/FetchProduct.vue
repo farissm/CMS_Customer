@@ -22,7 +22,7 @@
             </v-card-actions>
           </v-card>
         </v-dialog>
-          <v-flex md-3 v-for="product in products" :key="product.id" class="px-5">
+          <v-flex md-3 v-for="product in products" :key="product.id" class="px-5 py-5">
               <v-card
               class="mx-auto"
               width="230px"
