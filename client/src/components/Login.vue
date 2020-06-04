@@ -14,7 +14,7 @@
             <v-form>
             <v-text-field prepend-icon="email" name="Email" label="Email" v-model="email"></v-text-field>
             <v-text-field prepend-icon="lock" name="Password" label="Password" type="password" v-model="password"></v-text-field>
-            <p>don't have an account? <a href="#" style="text-decoration: none">Register</a></p>
+            <p>don't have an account? <a href="#" style="text-decoration: none" @click.prevent="getRegister">Register</a></p>
             <v-card-actions>
               <v-btn primary large block @click.prevent="login">Login</v-btn>
             </v-card-actions>
@@ -54,6 +54,9 @@ export default {
         .catch(err => {
           console.log(err)
         })
+    },
+    getRegister () {
+      this.$router.push({ name: 'RegisterPage' })
     }
   }
 }

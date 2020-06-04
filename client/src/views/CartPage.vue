@@ -5,7 +5,7 @@
         <Navbar />
         <v-col>
           <v-layout class="py-5">
-            <FetchProduct />
+            <Cart />
           </v-layout>
         </v-col>
       </v-row>
@@ -14,14 +14,16 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
-import FetchProduct from '@/components/FetchProduct.vue'
+import Cart from '@/components/Cart.vue'
 import Navbar from '@/components/Navbar.vue'
 export default {
-  name: 'HomePage',
+  name: 'CartPage',
   components: {
-    FetchProduct, Navbar
+    Cart, Navbar
   }
 }
 </script>
+
+<style>
+
+</style>

@@ -19,6 +19,7 @@
               <v-btn primary large block @click.prevent="register">Register</v-btn>
             </v-card-actions>
             </v-form>
+            <span class="red--text">{{errMessage}}</span>
           </v-card>
         </v-container>
       </v-flex>
@@ -35,12 +36,14 @@ export default {
     return {
       email: '',
       password: '',
-      confirmPass: ''
+      confirmPass: '',
+      errMessage: ''
     }
   },
   methods: {
     register () {
       if (this.password !== this.confirmPass) {
+        this.errMessage = 'password not match'
         this.$router.push({ name: 'RegisterPage' })
       } else {
         axios({
