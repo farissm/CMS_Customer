@@ -48,7 +48,7 @@ export default {
       } else {
         axios({
           method: 'post',
-          url: 'http://localhost:3000/register',
+          url: 'https://calm-beyond-37965.herokuapp.com/register',
           data: {
             email: this.email,
             password: this.password

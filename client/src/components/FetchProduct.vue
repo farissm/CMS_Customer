@@ -69,7 +69,7 @@ export default {
       if (localStorage.access_token) {
         axios({
           method: 'post',
-          url: 'http://localhost:3000/cart',
+          url: 'https://calm-beyond-37965.herokuapp.com/cart',
           data: {
             ProductId: id
           },

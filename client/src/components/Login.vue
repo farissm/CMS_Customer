@@ -41,7 +41,7 @@ export default {
     login () {
       axios({
         method: 'post',
-        url: 'http://localhost:3000/login',
+        url: 'https://calm-beyond-37965.herokuapp.com/login',
         data: {
           email: this.email,
           password: this.password

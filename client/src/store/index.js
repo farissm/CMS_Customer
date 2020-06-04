@@ -33,7 +33,7 @@ export default new Vuex.Store({
     fetchProduct (context, payload) {
       axios({
         method: 'get',
-        url: 'http://localhost:3000/product',
+        url: 'https://calm-beyond-37965.herokuapp.com//product',
         headers: {
           access_token: localStorage.access_token
         }
@@ -49,7 +49,7 @@ export default new Vuex.Store({
     fetchCart (context, payload) {
       axios({
         method: 'get',
-        url: 'http://localhost:3000/cart',
+        url: 'https://calm-beyond-37965.herokuapp.com//cart',
         headers: {
           access_token: localStorage.access_token
         }
@@ -70,7 +70,7 @@ export default new Vuex.Store({
     checkOut (context, payload) {
       axios({
         method: 'delete',
-        url: 'http://localhost:3000/cart',
+        url: 'https://calm-beyond-37965.herokuapp.com//cart',
         headers: {
           access_token: localStorage.access_token
         }
